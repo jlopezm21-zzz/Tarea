@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Validador de Entradas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Verificador de Expresiones Regulares</h1>
+
+    <label for="email">Correo Institucional:</label>
+    <input type="text" id="email" placeholder="usuario@curnvirtual.edu.co o usuario@curn.edu.co" />
+    <div id="emailResult" class="result"></div>
+
+    <label for="hex">Número Hexadecimal (#000 - #FFF o #000000 - #FFFFFF):</label>
+    <input type="text" id="hex" placeholder="#A3F o #12AF45" />
+    <div id="hexResult" class="result"></div>
+
+    <label for="decimal">Número Decimal (entre 0,0 y 5,0):</label>
+    <input type="text" id="decimal" placeholder="Ej: 3,0" />
+    <div id="decimalResult" class="result"></div>
+
+    <button onclick="validar()">Validar Entradas</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
